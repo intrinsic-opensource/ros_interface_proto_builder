@@ -19,7 +19,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        container: ['ros:humble', 'ros:jazzy', 'ros:rolling']
+        container: [
+          'ros:humble',
+          'ros:jazzy',
+          'ros:kilted',
+          'ros:rolling'
+          ]
     container: ${{ matrix.container }}
 
 
